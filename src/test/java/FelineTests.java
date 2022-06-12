@@ -36,7 +36,6 @@ public class FelineTests {
     @Test
     public void checkEatMeat() throws Exception {
         Feline feline = new Feline();
-        Mockito.when(animalMock.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> arrayListFeline = feline.eatMeat();
 
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), arrayListFeline);
