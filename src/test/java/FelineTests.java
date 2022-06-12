@@ -12,9 +12,6 @@ import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTests {
-    @Mock
-    Animal animalMock;
-
     @Test
     public void checkGetKittensDefault() {
         Feline feline = new Feline();
@@ -46,6 +43,6 @@ public class FelineTests {
         Feline feline = new Feline();
         String result = feline.getFamily();
 
-        Assert.assertEquals("Кошачьи",result);
+        Assert.assertEquals("Кошачьи", result);
     }
 }
